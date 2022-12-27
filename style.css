@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+h1,h2,h3,h4,body,section,div,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.bg{
+    background: url(/images/bg-main-desktop.png);
+    width: 483px;
+    height: 100vh;
+    position: relative;
+}
+
+.cartao-frente{
+    width: 447px;
+    height: 245px;
+    background: url(/images/bg-card-front.png);
+    position: absolute;
+    left: 160px;
+    top: 200px;
+}
+.cf{
+    position: relative;
+}
+.cartao-numero::before{
+    content: '';
+    display: block;
+    width: 47px;
+    height: 47px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: -20px;
+}
+.cartao-numero::after{
+    content: '';
+    display: block;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: -85px;
+    left: 40px;
+}
+.cartao-numero{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    font-size: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+.cartao-nome{
+    position:absolute;
+    top: 200px;
+    left: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+}
+.cartao-tras{
+    width: 447px;
+    height: 245px;
+    background: url(/images/bg-card-back.png);
+    position: absolute;
+    top: 470px;
+    left: 250px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+
+.cartao-numero-tras{
+    position: absolute;
+    top: 110px;
+    left: 365px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.formulario-cartao{
+    margin: 300px auto;
+}
+
+
+.cardholder{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2ch;
+}
+.card{
+    display: grid;
+    width: 381px;
+    height: 45px;
+    border-radius: 12px;
+    margin: 12px 0 20px 0;
+}
+.cardnumber{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2ch;
+}
+.carddate{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2ch;
+}
+.cartao-data input{
+    width: 80px;
+    height: 45px;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+.cartao-cvc{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1/-1;
+}
+.cartao-cvc input{
+    width: 186.5px;
+    height: 45px;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+.btn{
+    margin-top: 24px;
+    width: 381px;
+    height: 45px;
+    border-radius: 12px;
+    background: #220930;
+    color: #FFFFFF;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.1ch;
+}
+
+.nome{
+    width: 35ch;
+}
+
+
+.finalizacao-processo{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.icone-completo{
+    margin: 40px auto;
+
+}
+
+.agradecimento{
+    margin: 0 auto;
+}
+
+.frase-confirmacao{
+    margin: 30px auto;
+}
