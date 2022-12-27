@@ -10,7 +10,7 @@ body{
     grid-template-columns: auto 1fr;
 }
 .bg{
-    background: url(/images/bg-main-desktop.png);
+    background: url(/images/bg-main-desktop.png) center;
     width: 483px;
     height: 100vh;
     position: relative;
@@ -19,7 +19,7 @@ body{
 .cartao-frente{
     width: 447px;
     height: 245px;
-    background: url(/images/bg-card-front.png);
+    background: url(/images/bg-card-front.png) center;
     position: absolute;
     left: 160px;
     top: 200px;
@@ -70,7 +70,7 @@ body{
 .cartao-tras{
     width: 447px;
     height: 245px;
-    background: url(/images/bg-card-back.png);
+    background: url(/images/bg-card-back.png) center;
     position: absolute;
     top: 470px;
     left: 250px;
@@ -140,6 +140,7 @@ body{
     color: #FFFFFF;
     font-family: 'Space Grotesk', sans-serif;
     letter-spacing: 0.1ch;
+    border: none;
 }
 
 .nome{
@@ -166,4 +167,97 @@ body{
 
 .frase-confirmacao{
     margin: 30px auto;
+}
+input{
+    border: 2px solid #c2c2c2 ;
+    border-color: #c2c2c2;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+
+@media (max-width:1400px){
+    .bg{
+        background: url(/images/bg-main-desktop.png);
+        width: 30vw;
+        height: 100vh;
+        position: relative;
+    }
+    .cartao-frente{
+        left: 30px;
+    }
+    .cartao-tras{
+        left: 100px;
+    }
+}
+
+@media (max-width:1200px){
+    .cartao-frente{
+        width: 300px;
+        height: 180px;
+        border-radius: 12px;
+        left: 100px;
+        top: 270px;
+    }
+    .cartao-numero{
+        font-size: 1.3rem;
+        top: 110px;
+        left: 35px;
+    }
+    .cartao-numero::after{
+        width: 16px;
+        height: 16px;
+        left: 30px;
+    }
+    .cartao-numero::before{
+        width: 32px;
+        height: 32px;
+        top: -94px;
+        left: -10px;
+    }
+    .cartao-nome{
+        font-size: 0.8rem;
+        top: 150px;
+        left: 35px;
+    }
+    .nome{
+        width: 25ch;
+    }
+    .cartao-tras{
+        width: 300px;
+        height: 180px;
+        border-radius: 12px;
+        left: 150px;
+    }
+    .cartao-numero-tras{
+        left: 250px;
+        top: 80px;
+    }
+}
+
+@media (max-width:600px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    .bg{
+        background: url(/images/bg-main-mobile.png) center ;
+        width: 100vw;
+        height: 240px;
+    }
+    .cartao-frente{
+        top:  130px;
+        left: 12px;
+        z-index: 1;
+    }
+    .cartao-tras{
+        top: 20px;
+        left: 100px;
+    }
+    .formulario-cartao{
+        margin: 120px auto;
+    }
+    .btn{
+        width: 100%;
+    }
+
 }
